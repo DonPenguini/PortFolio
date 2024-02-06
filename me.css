@@ -352,6 +352,7 @@ section{
     .nav ul li a{
         font-size: 9px;
         height: 14px;
+        margin-left: -3px;
     }
 
     .text h1 {
