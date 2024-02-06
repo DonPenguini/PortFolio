@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+body {
+    font-family: "Poppins", sans-serif;
+    line-height: 1.6;
+    margin: 40px;
+    padding: 20px;
+    background-color: #1e1e1e;
+    background-image: url("d1.jpg");
+    background-size: cover;
+    color: #ffffff;
+    font-size: 19px;
+}
+
+.comment-session {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.post-comment {
+    margin-bottom: 20px;
+}
+
+.comment-list {
+    background-color: #3d3d3d;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px #0002;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user {
+    font-weight: 600;
+}
+
+.day {
+    font-size: 14px;
+    color: #888888;
+}
+
+.btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    color: #777;
+    cursor: pointer;
+    margin-right: 18px;
+    margin-top: -20px;
+    transition: color 0.3s;
+}
+.btn{
+        background: transparent;
+        border: none;
+        font-size: 30px;
+        outline: none;
+        color: grey;
+    }
+    
+.btn i:hover{
+        cursor: pointer;
+        color: red;
+    }
+
+.comment-box {
+    padding: 10px;
+    overflow: hidden;
+}
+
+.comment-box textarea {
+    background: #3d3d3d;
+    width: 100%;
+    height: 50px;
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 0 0 0.5px #0002;
+    color: #ffffff;
+}
+
+
+.comment-box .comment-submit {
+    float: right;
+    padding: 10px;
+    border: none;
+    background: #2c2c2e;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.comment-box .comment-submit:hover {
+    background: #49c5b6;
+}
+
+    </style>
+    <title>Blog1</title>
+</head>
+<body>
+    <h1><u>This God Damned Funny Business is No Laughing Matter</h1><br></u>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <p>It seems to me that one of the best indicators of this nation’s moral decay is the reprehensible nonsense that passes for humor nowadays.<br><br>
+    When I was a boy, people didn’t have time for humor. We were too busy wiping the smirk off Hitler’s face to concern ourselves with mindless tittering and idle guffaws. For us, laughter was like shoe laces or smallpox vaccines – nice to have but not a luxury most of us could afford.<br><br>
+    And when we did indulge ourselves in some mindless comic diversion, we sought out decent, civilized humorists – men who told knock-knock jokes and lamented their wives' outrageous spending and disappointing attempts to make pot roast. Men who peppered us with puns and poked fun at the foibles of nagging mothers-in-law and the dangers of shady foreigners.<br><br>
+    Our comics didn’t denigrate our country’s values – they embodied them.<br><br>
+    These days, though, it seems that every flinty reprobate with a dirty mind and a misanthropic axe to grind is parading across the screen of my Magnavox clutching at his genitals, telling off-color jokes and carrying on like a raving fool on a day pass from a home for the criminally profane.<br><br>
+    You never heard Bud Abbott calling President Roosevelt a “douchebag” or poking fun at the Lindbergh baby. You never heard Jack Benny talk about smoking amphetamines or “bumpin’ uglies” with the Andrews Sisters. Those men had class – and they understood that if they crossed a line, we’d beat them senseless with a sack of righteous indignation faster than you could say Fatty Arbuckle or The First Amendment.<br><br>
+    There are no “take my wife” jokes or innocent jabs at those rascally drink-loving Irish anymore. Every degenerate quipster these days has to crack wise about social inequality, political scandal, the female anatomy, and every other issue my generation spent years suppressing, denying, and working tirelessly to ignore. They’re subversive, they’re crude, and they’re undoing our social fabric one HBO special at a time.<br><br>
+    If you ask me, we’re on a path to damnation – and if we don’t change our comedic stripes soon and return to the simple pleasures of double entendres, amusing pratfalls, and adeptly censored one-liners, it won’t be long before we get our just desserts and are spending an eternity sitting through a never-ending “open mic night” in the Lenny Bruce Lounge of the Holiday Inn in Hell.<br><br>
+    </p>
+
+    <div class="comment-session">
+        <div class="post-comment">
+            <div class="comment-list">
+                <div class="flex">
+                    <div class="user">
+                        <div class="name">XxDaRealSantaxX</div>
+                        <div class="day">4 days ago</div>
+                        <br>
+                    </div>
+                        <div class="btns">
+                            <Button onclick="Toggle1()" id="btnh1" class="btn"><i class="fas fa-heart"></i></Button>
+                        </div>
+                        <script>
+                            function Toggle1(){
+                            var btnvar1 = document.getElementById('btnh1');
+                            if (btnvar1.style.color =="red") {
+                                btnvar1.style.color = "grey"
+                            }
+                            else{
+                                btnvar1.style.color = "red"
+                            }
+                            }
+                        </script>
+                </div>
+                <div class="comment">
+                    Wanna learn abcd? Call me..
+                </div>
+            </div>
+            <form action="" class="comment-box">
+                <div class="user">
+                    <div class="name">Enter:</div>
+                </div>
+                <textarea name="comment" placeholder="Add a comment..."></textarea>
+                <button class="comment-submit">Comment</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
