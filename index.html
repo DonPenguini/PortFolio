@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <link rel="stylesheet" href="me.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+</head>
+<body>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <div class="all">
+    <div class="nav">
+        <ul>
+            <li><a href="#two">About Me</a></li>
+            <li><a href="#three">Education</a></li>
+            <li><a href="#four">Achievements</a></li>
+            <li><a href="#five">Skills</a></li>
+            <li><a href="#six">Blog</a></li>
+            <li><a href="#seven">Socials</a></li>
+            <li><a href="imp.pdf">IMP</a></li>
+        </ul>
+        <img src="sun.png" id="icon">
+    </div>
+    <div class="header">
+        <section class="one">
+            <div class="pic">
+            </div>
+            <div class="side">
+                <img src="me.png" class="logo">
+                <h3>THE LEGEND</h3>
+            </div>
+            <div class="text">
+                <h1>SIDHARTH K</h1>
+                <p>The Man, The Myth, The Legend</p>
+                <p>Since 2004...</p>
+            </div>
+        </section>
+        <section class="two" id="two">
+            <h1>Hi, I am SIDHARTH K</h1><br>
+            <p >I am 19 years old, Hooray...<br>
+                Inviting Applications for the girlfriend post,<br>Interested candidates can checkout my socials..<br>
+                I was born and brought up in Kerala, where my first words<br>   
+                were probably "Onam Sadya" instead of the typical "mama".<br>
+                Currently pursuing Computer Science and Engineering at IIIT Hyderabad, yeah I know... <br>
+            </p>
+        </section>
+        <section class="three" id="three">
+            <h1><u>My Education:</u></h1>
+            <p>-Till 10th:- MES Central School, Tirur<br>
+                -11th and 12th:- Chavara Public School, Pala<br>
+                -Currently:- IIIT Hyderabad<br>
+            </p>
+        </section>
+        <section class="four" id="four">
+            <h1><u>My Achievements:</u></h1>
+            <p>1. Was successfully born after defeating 12 million competitors.<br>
+                2. Won the "Best Baby" award in the hospital.<br>
+                3. Killed tons of mosquitoes in my lifetime.<br>
+                4. Successfully endured 12 years of schooling.<br>
+                5. Survived 2 years of JEE coaching.<br>
+                6. Barely qualified JEE.<br>
+                7. THALA for a reason.
+            </p>
+        </section>
+        <section class="five" id="five">
+            <h1><u>My Skills:</u></h1>
+            <div class="skills">
+                <ul>
+                    <li>Can eat 10 biriyanis in one sitting.</li>
+                    <li>Can sleep for 24 hours straight.</li>
+                    <li>Can watch 4 movies in a row.</li>
+                    <li>Knows how to make Maggi.</li>
+                    <li>Knows a little bit about Coding.</li>
+                    <li>Knows a little about Chess.</li>
+                    <li>Plays Football. <b>#Vamos Argentina</b></li>
+                    <li>Knows Malayalam.</li>
+                </ul>
+            </div>
+        </section>
+        <section class="six" id="six">
+                <h1><u>My Blog</u></h1>
+            <div class="blog">
+                <div class="blog-box">
+                    <div class="blog-img">
+                        <img src="b2.png" alt="blog1">
+                    </div>
+                    <div class="blog-text">
+                        <span>June 2021</span>
+                        <a href="blog1.html" class="blog-title">This God Damned Funny Business is No Laughing Matter</a>
+                        <p>It seems to me that one of the best indicators of this nation’s moral decay is the reprehensible nonsense that passes for humor nowadays When I was a boy, people didn’t have time for humor. We were too busy wiping the smirk off Hitler’s face to concern ourselves with </p>
+                    </div>
+                </div>
+                <div class="blog-box">
+                    <div class="blog-img">
+                        <img src="m.jpg" alt="blog2">
+                    </div>
+                    <div class="blog-text">
+                        <span>June 2021</span>
+                        <a href="blog2.html" class="blog-title">How to Get Rich:</a>
+                        <p>In the quest to build wealth, there’s no magic formula – but there are proven strategies that can significantly increase your chances of success. So, let’s dive in.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="seven" id="seven">
+            <div class="socials">
+                <h1><u>Socials</u></h1>
+                    <a class="git" href="https://github.com/DonPenguini">
+                        <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                    <a class="insta" href="https://www.instagram.com/_sid.k_/">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                    <a class="mail" href="mailto:sidharth.k@students.iiit.ac.in" >
+                        <ion-icon name="mail-outline"></ion-icon>
+                    </a>
+            </div>
+        </section>
+    </div>
+</div>
+<script>
+    var icon = document.getElementById('icon');
+    icon.onclick = function(){
+        document.body.classList.toggle('light-theme');
+        if(document.body.classList.contains('light-theme')){
+            icon.src="moon.png";
+        }else{
+            icon.src="sun.png";
+        }
+    }
+
+</script>
+</body>
+</html>
